@@ -1,0 +1,162 @@
+<! DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CSS Webpage</title>
+<style>
+
+	body{
+		margin:0;
+		padding:0;
+		line-height: 1.5em;
+	}
+	
+	#header{
+		background: black;
+		font-family: Arial;
+		height: 100px;
+	}
+	
+	#contentwrapper{
+		float:left;
+		width:100%;
+	}
+	
+	#contentcolumn{
+		margin: 0 230px 0 230px;
+	}
+	
+	#leftcolumn{
+		float:left;
+		width:230px;
+		margin-left: -100%;
+		background: #FFFB00;
+	}
+	
+	#rightcolumn{
+		float:left;
+		width:230px;
+		margin-left: -230px;
+		background: #FFFB00;
+	}
+	
+	.innertext{
+		margin:20px;
+		font-family: Arial;
+		color: #5E5E5E;
+	}
+	
+	#footer{
+		clear:left;
+		width:100%;
+		background:black;
+		color:#FFF;
+		font-family:Arial;
+		text-align:center;
+		padding:4px;
+	}
+	
+	ul{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+		background-color:#000;
+	}
+	
+	li{
+		float:left;
+		border-right:1px solid #bbb;
+	}
+	
+	li:last-child{
+		border-right: none;
+	}
+	
+	li a{
+		display:block;
+		color:white;
+		text-align:center;
+		padding:14px 16px;
+		text-decoration:none;
+	}
+	
+	li a:hover:not(.active){
+		background-color:#808080;
+	}
+	
+	.active{
+		background-color:#0099ff;
+	}
+	
+	@media (max-width:840px){
+	
+		#leftcolumn{
+			margin-left:-100%
+		}
+		#rightcolumn{
+			float:none;
+			width:100%;
+			margin-left:0;
+			clear:both;
+		}
+		#contentcolumn{
+			margin-right:0;
+		}
+	
+	}
+	
+	@media (max-width:600px){
+	
+		#leftcolumn{
+			float:none;
+			width:100%;
+			margin-left:0;
+			clear:both;
+		}
+		#contentcolumn{
+			margin-left:0;
+		}
+	}
+	
+</style>
+</head>
+
+<body>
+<div id="container">
+	<div id="header">
+	
+		<ul style="display:inline;">
+			<li><a class="active" href="#home">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<li><a href="#news">News</a></li>
+		</ul>
+		
+	</div>
+
+	<div id="contentwrapper">
+		<div id="contentcolumn">
+			<div class="innertext">
+				<b>Welcome!</b><br/> Mr and Mrs Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense. Mr Dursley was the director of a ﬁ rm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large moustache. Mrs Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbours. The Dursleys had a small son called Dudley and in their opinion there was no ﬁner boy anywhere.
+			</div>
+		</div>
+	</div>
+	
+	<div id="leftcolumn">
+		<div class="innertext">
+			<b>Left column</b><br/>Mr and Mrs Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense. Mr Dursley was the director of a ﬁ rm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large moustache. Mrs Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbours. The Dursleys had a small son called Dudley and in their opinion there was no ﬁner boy anywhere.
+		</div>
+	</div>
+	
+	<div id="rightcolumn">
+		<div class="innertext">
+			<b>Right column</b><br/>Mr and Mrs Dursley, of number four, Privet Drive, were proud to say that they were perfectly normal, thank you very much. They were the last people you’d expect to be involved in anything strange or mysterious, because they just didn’t hold with such nonsense. Mr Dursley was the director of a ﬁ rm called Grunnings, which made drills. He was a big, beefy man with hardly any neck, although he did have a very large moustache. Mrs Dursley was thin and blonde and had nearly twice the usual amount of neck, which came in very useful as she spent so much of her time craning over garden fences, spying on the neighbours. The Dursleys had a small son called Dudley and in their opinion there was no ﬁner boy anywhere.
+		</div>
+	</div>
+	
+	<div id="footer">Footer</div>
+</div>
+</body>
+
+</html>
